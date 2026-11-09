@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaw Farm Coffee Roaster | Premium Artisan Coffee</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#000000',
+                        cardbg: '#0a0f1d',
+                        accentblue: '#1e40af',
+                        brightblue: '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-darkbg text-slate-100 font-sans antialiased selection:bg-brightblue selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-darkbg/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-accentblue to-brightblue flex items-center justify-center shadow-lg shadow-brightblue/20">
+                    <i class="fa-solid fa-mug-hot text-white text-lg"></i>
+                </div>
+                <span class="text-xl font-bold tracking-wider text-white">YAW FARM <span class="text-brightblue">ROASTERS</span></span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#features" class="hover:text-brightblue transition">Features</a>
+                <a href="#menu" class="hover:text-brightblue transition">Signature Menu</a>
+                <a href="#about" class="hover:text-brightblue transition">About Us</a>
+            </nav>
+            <div>
+                <a href="#contact" class="px-5 py-2.5 rounded-xl bg-brightblue hover:bg-blue-600 text-white font-medium text-sm transition shadow-lg shadow-brightblue/30">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brightblue/10 blur-[140px] rounded-full pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs text-brightblue mb-6">
+                <i class="fa-solid fa-fire text-amber-500"></i>
+                <span>Freshly Roasted Artisan Coffee Beans</span>
+            </div>
+            <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                Crafting the Perfect <br class="hidden md:block"> <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-brightblue">Coffee Experience</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-lg text-slate-400 mb-10">
+                Sourced from the finest hills, roasted with absolute precision in Las Vegas. Elevate your daily ritual with bold flavors and unmatched aromas.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#menu" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brightblue hover:bg-blue-600 text-white font-semibold transition shadow-xl shadow-brightblue/20">
+                    Explore Menu
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-white font-semibold transition">
+                    Visit Store
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-black/40 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">Why Choose Our Roasts?</h2>
+                <p class="text-slate-400 max-w-lg mx-auto">We don’t just roast coffee; we engineer an awakening in every single cup.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-cardbg border border-slate-800/80 hover:border-brightblue/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-brightblue/10 flex items-center justify-center text-brightblue text-xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">100% Organic Beans</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Directly sourced from sustainable farms, ensuring pristine quality and ethical harvesting practices.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-cardbg border border-slate-800/80 hover:border-brightblue/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-brightblue/10 flex items-center justify-center text-brightblue text-xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Master Roasting</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Batch-roasted to absolute perfection to lock in rich textures, deep tones, and zero bitterness.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-cardbg border border-slate-800/80 hover:border-brightblue/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-brightblue/10 flex items-center justify-center text-brightblue text-xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Fresh Delivery</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Sealed immediately post-roast to preserve peak freshness straight to your doorstep or counter.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">Signature Selections</h2>
+                <p class="text-slate-400 max-w-lg mx-auto">Handcrafted brews designed to elevate your palate.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="bg-cardbg rounded-2xl border border-slate-800/80 overflow-hidden hover:border-slate-700 transition">
+                    <div class="h-48 bg-gradient-to-br from-slate-900 to-slate-950 flex items-center justify-center relative">
+                        <i class="fa-solid fa-mug-saucer text-5xl text-brightblue/40"></i>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full bg-brightblue text-white text-xs font-semibold">Best Seller</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-lg font-bold text-white">Blackberry Latte</h3>
+                            <span class="text-brightblue font-bold">$6.50</span>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-4">Rich espresso blended with silky micro-foam and a subtle hint of sweet blackberry infusion.</p>
+                        <button class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-brightblue text-white text-sm font-medium transition border border-slate-800">Order Now</button>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="bg-cardbg rounded-2xl border border-slate-800/80 overflow-hidden hover:border-slate-700 transition">
+                    <div class="h-48 bg-gradient-to-br from-slate-900 to-slate-950 flex items-center justify-center relative">
+                        <i class="fa-solid fa-coffee text-5xl text-brightblue/40"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-lg font-bold text-white">Signature Cold Brew</h3>
+                            <span class="text-brightblue font-bold">$5.00</span>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-4">Steeped for 24 hours to yield an ultra-smooth, low-acidity profile packed with deep chocolate notes.</p>
+                        <button class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-brightblue text-white text-sm font-medium transition border border-slate-800">Order Now</button>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="bg-cardbg rounded-2xl border border-slate-800/80 overflow-hidden hover:border-slate-700 transition">
+                    <div class="h-48 bg-gradient-to-br from-slate-900 to-slate-950 flex items-center justify-center relative">
+                        <i class="fa-solid fa-fire text-5xl text-brightblue/40"></i>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full bg-amber-600 text-white text-xs font-semibold">Limited Roast</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-lg font-bold text-white">Himalayan Dark Roast</h3>
+                            <span class="text-brightblue font-bold">$18.00</span>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-4">Whole bean bag (12oz). Heavy body with earthy undertones and a lingering sweet finish.</p>
+                        <button class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-brightblue text-white text-sm font-medium transition border border-slate-800">Buy Beans</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer Section -->
+    <section id="contact" class="py-20 bg-black/60 border-t border-slate-900">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Visit Yaw Farm Coffee Roaster</h2>
+            <p class="text-slate-400 mb-8">Stop by our roastery or send a direct message for wholesale & custom orders.</p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 mb-12 text-sm text-slate-300">
+                <div class="flex items-center space-x-3 bg-cardbg px-6 py-4 rounded-xl border border-slate-800">
+                    <i class="fa-solid fa-location-dot text-brightblue text-lg"></i>
+                    <span>Las Vegas, Nevada, USA</span>
+                </div>
+                <div class="flex items-center space-x-3 bg-cardbg px-6 py-4 rounded-xl border border-slate-800">
+                    <i class="fa-solid fa-phone text-brightblue text-lg"></i>
+                    <span>+1 (702) 747-7274</span>
+                </div>
+            </div>
+            <p class="text-xs text-slate-600">&copy; 2026 Yaw Farm Coffee Roaster. Designed professionally for web presentation.</p>
+        </div>
+    </section>
+
+</body>
+      </html>
+  
